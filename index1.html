@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/3e4a1d7bef.js" crossorigin="anonymous"></script>
+    <title>about</title>
+</head>
+<body>
+     <div class="container">
+    
+  <nav>
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="index1.html">About</a></li>
+      <li><a href="index2.html">Work</a></li>
+      <li><a href="index3.html">Portfolio</a></li>
+      <li><a href="index4.html">Contact</a></li>
+    </ul>
+  </nav>
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="kalyanimg.jpg">
+                
+                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P class="sub-para">I am a results-driven market research and business strategy professional with over
+                     four years of experience across diverse industries including energy, healthcare, pharma, and insurance. 
+                     With a strong foundation in data analytics and financial analysis, I specialize in uncovering actionable 
+                     insights that drive strategic growth and mitigate organizational risk. I thrive in collaborative environments,
+                      working closely with cross-functional teams and senior stakeholders to align business objectives with market trends.
+                       My passion lies in turning complex data into clear, impactful strategies that empower decision-making and business innovation.</P>
+
+                      <div class="tab-titles">
+                        <p class=" tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class=" tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class=" tab-links"onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents  active-tab" id="skills">
+                        <ul>
+                            <li><span> Market Research & Competitive Analysis </span>Ability to conduct deep-dive research into industry trends, competitors, and market opportunities to support strategic decisions.</li>
+                            <li><span> Data Analytics & Financial Analysis </span>Proficient in analyzing large data sets and financial statements to uncover performance insights and risk factors.</li>
+                            <li><span>  Microsoft Excel, Power BI & Office Suite </span>Advanced user of Excel for data modeling, and capable of visualizing insights with Power BI and other MS Office tools.</li>
+                            <li><span>Stakeholder Engagement & Team Leadership </span>Effective in collaborating with cross-functional teams and presenting findings to senior leadership for strategic alignment.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> Analyst – Aon
+                                May 2023 – Present | Bengaluru 
+                                </span>Conduct market and competitive analysis to identify trends and business opportunities.
+                                Collaborate with teams and data scientists to develop strategies and predictive models.</li>
+                            <li><span>GlobalData Plc – Associate Analyst
+                                March 2022 – May 2023 | Hyderabad, India</span>Conducted qualitative and quantitative research across energy, pharma, industrial, and healthcare sectors.
+                                Analyzed financial statements and KPIs to evaluate company performance and market standing.</li>
+                            <li><span>Tata Consultancy Services (TCS) – Process Associate
+                                June 2019 – September 2020 | Hyderabad, India  </span>Managed underwriting processes and approvals for Liberty Mutual, a US-based insurance project.
+                                 Specialized in risk evaluation, policy reviews, reinsurance, and audit documentation.</li>
+                            
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>  Sunstone Eduversity </span>MBA – Business Administration & Management
+                                2020 – 2022</li>
+                            <li><span> SUN Degree & P.G. College </span>BBA – Human Resources Management
+                                2016 – 2019</li>
+                            
+                        </ul>
+                      </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    /* defining the function of opentabs*/
+    function opentab(tabname){
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/3e4a1d7bef.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <div class="container">
+    
+  <nav>
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="index1.html">About</a></li>
+      <li><a href="index2.html">Work</a></li>
+      <li><a href="index3.html">Portfolio</a></li>
+      <li><a href="index4.html">Contact</a></li>
+    </ul>
+  </nav>
+    <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work" onclick="toggleText(this)">
+          <img src="What-is-Market-Research.jpg" alt="Market Research" class="work-image">
+          <div class="layer">
+            <h3>Market Research & Strategy</h3>
+            <p> Visuals showcasing dynamic dashboards with key performance indicators (KPIs), charts, and graphs.
+                </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work" onclick="toggleText(this)">
+          <img src="istockphoto-1309831153-612x612.jpg" alt="Dashboard" class="work-image">
+          <div class="layer">
+            <h3>Analytics & Dashboard Design</h3>
+            <p> Visuals showcasing dynamic dashboards with key performance indicators (KPIs), charts, and graphs.
+                </p>
+            <a href="#"><i> class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work" onclick="toggleText(this)">
+          <img src="download.jpeg" alt="Work Sample" class="work-image">
+          <div class="layer">
+            <h3>Team Collaboration & Leadership</h3>
+            <p > Photos capturing collaborative team environments, brainstorming sessions, and strategic discussions.
+                </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <script>
+  function toggleText(work) {
+    const text = work.querySelector('.layer');
+    text.style.display = (text.style.display === 'block') ? 'none' : 'block';
+  }
+
+</script>
+    
+</body>
+</html>
