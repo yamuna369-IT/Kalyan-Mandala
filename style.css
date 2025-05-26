@@ -438,3 +438,46 @@ transition: background 0.5s;
   transform: translateY(-5px);
 }
 /*-------css only small screen--------*/
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section {
+    padding: 20px 10px;
+  }
+
+  .services, .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+}
+.services, .portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Desktop */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .services, .portfolio {
+    grid-template-columns: 1fr; /* Mobile */
+  }
+}
